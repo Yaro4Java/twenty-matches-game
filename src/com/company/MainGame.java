@@ -19,9 +19,9 @@ public class MainGame {
         digit here in 4-radix equivalent of the number matters! In binary representation it is the two right bits
         of the number. So these 2 most right bits should be 0b01 to make the number a wonder number.
          For every possible combination of these 2 right bits of current number ( actually there are only four of
-        them ) the 2 bits of the number that is 1 less than current are exactly those that having been subtracted
-        from current number make its 2 right bits equal to 0b01 that is make the current number a wonder number,
-        being at the same time within the tolerance for one move ( i.e. less than 4 ):
+        them ) the 2 corresponding right bits of the number that is 1 less than current are exactly those that
+        having been subtracted from current number make its 2 right bits equal to 0b01 that is make the current number
+        a wonder number, being at the same time within the tolerance for one move ( i.e. less than 4 ):
 
                 matchesToRemoveToWin = (numberOfMatches - 1) & 0b11
 
