@@ -17,4 +17,4 @@ __________________________
   
 Пример работы программы:
   
-![Пример работы программы](https://java-online-course.github.io/course/materials/20_matches/img/out-example.png)
+![Пример работы программы](screenshot.png)
