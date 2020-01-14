@@ -6,11 +6,11 @@ public interface InformerService {
 
     void informAboutBeginning();
 
-    void informAboutMatchHeapState(int NumberOfMatches);
+    void informAboutMatchHeapState(int numberOfMatches);
 
     void informAboutMoveNumberAndCurrentPlayer(int moveNumber, Player currentPlayer);
 
-    void informAboutMatchesRemovedByPlayer(int NumberOfRemovedMatches, Player player);
+    void informAboutMatchesRemovedByPlayer(int numberOfRemovedMatches, Player player);
 
     void informAboutInvalidMove();
 
