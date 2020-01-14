@@ -8,7 +8,7 @@ public interface InformerService {
 
     void informAboutMatchHeapState(int numberOfMatches);
 
-    void informAboutMoveNumberAndCurrentPlayer(int moveNumber, Player currentPlayer);
+    void informAboutCurrentPlayer(Player currentPlayer);
 
     void informAboutMatchesRemovedByPlayer(int numberOfRemovedMatches, Player player);
 

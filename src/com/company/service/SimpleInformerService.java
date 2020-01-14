@@ -24,8 +24,8 @@ public class SimpleInformerService implements InformerService {
     }
 
     @Override
-    public void informAboutMoveNumberAndCurrentPlayer(int moveNumber, Player currentPlayer) {
-        System.out.println("Ход " + moveNumber + ". Ходит " + currentPlayer.getName() + ".");
+    public void informAboutCurrentPlayer(Player currentPlayer) {
+        System.out.println("Ходит " + currentPlayer.getName() + ".");
     }
 
     @Override

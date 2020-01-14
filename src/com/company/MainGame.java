@@ -17,8 +17,6 @@ public class MainGame {
         Player computer = new Player("Компьютер");
         Player currentPlayer = null;
 
-        int moveNumber = 0;
-
         SimplePlayerQueueRepository playerQueue = new SimplePlayerQueueRepository();
 
         SimplePlayerService playerService = new SimplePlayerService(matchHeap);
@@ -31,13 +29,12 @@ public class MainGame {
         while (!matchHeap.isLastMatch() && !matchHeap.isEmpty()) {
 
             int matchesToRemove;
-            moveNumber++;
 
             informer.informAboutMatchHeapState(matchHeap.getNumberOfMatches());
 
             currentPlayer = playerQueue.getFirstPlayerInQueue();
 
-            informer.informAboutMoveNumberAndCurrentPlayer(moveNumber, currentPlayer);
+            informer.informAboutCurrentPlayer(currentPlayer);
 
             if (currentPlayer == computer) {
                 matchesToRemove = playerService.computerMove();
